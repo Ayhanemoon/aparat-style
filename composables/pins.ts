@@ -1,4 +1,3 @@
-// composables/useRoom.ts
 import { useRuntimeConfig } from '#app'
 import { useApi } from '~/composables/api'
 
