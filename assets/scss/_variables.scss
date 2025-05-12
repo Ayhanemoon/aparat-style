@@ -1,0 +1,58 @@
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$secondary:     $gray-600;
+$success:       $green;
+$primary:       $cyan;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+:root[data-theme="light"] {
+  --bg-color: #E0E0E0;
+  --text-color: $dark;
+  --primary-color: $primary;
+  --neumorphic-bg: #e0e0e0;
+  // Add other light theme variables here
+}
+
+:root[data-theme="dark"] {
+  --bg-color: $gray-900;
+  --text-color: $gray-200;
+  --primary-color: $primary;
+  --neumorphic-bg: #403f3f;
+  // Add other dark theme variables here
+}
+
+$bg-color: var(--bg-color);
+$text-color: var(--text-color);
+$primary-color: var(--primary-color);
+
+.neumorphic {
+  background:var(--neumorphic-bg);
+  border-radius: 1rem;
+  box-shadow:  5px 5px 20px #d5d5d5,
+             -5px -5px 20px #ebebeb;
+  border: none;
+}
